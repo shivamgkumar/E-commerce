@@ -15,7 +15,8 @@ class admin_product_controller extends Controller
 
         $data= product::with('category')->orderBy('id','desc')->get();
         $all_data_category = category::all()->unique('category')->values();
-        return view('admin-product',compact('data',  'all_data_category'));
+        $shivam='csd';
+        return  view('admin-product',compact('data',  'all_data_category','shivam'));
     }
 
      
