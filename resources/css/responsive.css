@@ -1,0 +1,153 @@
+/* Responsive Styles */
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .category-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    .header-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .search-bar {
+        order: 3;
+        max-width: 100%;
+        margin: 15px 0 0;
+        width: 100%;
+    }
+
+    .carousel-container {
+        height: 400px;
+    }
+
+    .carousel-content h1 {
+        font-size: 28px;
+    }
+
+    .carousel-content p {
+        font-size: 16px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonial-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .carousel-container {
+        height: 350px;
+    }
+
+    .carousel-content {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .carousel-content h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .carousel-content p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-form input {
+        border-radius: var(--radius);
+        margin-bottom: 10px;
+    }
+
+    .newsletter-form button {
+        border-radius: var(--radius);
+    }
+
+    .payment-icons img {
+        height: 30px;
+        margin: 10px;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .carousel-container {
+        height: 300px;
+    }
+
+    .carousel-content {
+        padding: 15px;
+    }
+
+    .carousel-content h1 {
+        font-size: 20px;
+    }
+
+    .carousel-content p {
+        font-size: 12px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .offers-wrapper {
+        padding: 40px 20px;
+    }
+
+    .offer-content h2 {
+        font-size: 24px;
+    }
+
+    .offer-content p {
+        font-size: 14px;
+    }
+}
